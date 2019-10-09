@@ -2,5 +2,5 @@
 <div class="banner-background">
   <!-- Inclusão das imagens -->
   <!-- Conectando a string banner -->
-  <img src="../../../assets/banner-acesso/imagens/img_1.png" [@banner]="estado" />
+  <img *ngFor="let imagem of imagens" [src]="imagem.url" [@banner]="imagem.estado" />
 </div>
