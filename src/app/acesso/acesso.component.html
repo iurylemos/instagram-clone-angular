@@ -12,7 +12,8 @@
     </div>
     <ng-template #formLogin>
       <div class="col-sm-6 d-flex justify-content-start" [@animacao-painel]="estadoPainel">
-        <app-login></app-login>
+        <!-- Os dados que estou recebendo é a string que estou emitindo na classe do login -->
+        <app-login (exibirPainel)="exibirPainel($event)"></app-login>
       </div>
     </ng-template>
 

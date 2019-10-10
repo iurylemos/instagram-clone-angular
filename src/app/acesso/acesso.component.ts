@@ -39,4 +39,9 @@ export class AcessoComponent implements OnInit {
   ngOnInit() {
   }
 
+  public exibirPainel(event: string): void {
+    // console.log('Parâmetro recebido no componente pai é: ', event)
+    this.cadastro = event === 'cadastro' ? true : false
+  }
+
 }
